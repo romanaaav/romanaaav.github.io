@@ -1,0 +1,85 @@
+/*
+    Starting configs.
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #555;
+    color: #808080;
+    font-family: 'Roboto', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 22px;
+    text-rendering: optimizeLegibility;
+}
+
+/*
+    Header
+*/
+
+.main-nav {
+    float: right;
+    list-style: none;
+    width: 100%;
+    padding: 18px 0;
+    background: rgb(61, 61, 61);
+    box-shadow: 0 2px 3px #383838;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 2%;
+}
+
+.hero-box h1 {
+    display: inline-block;
+    width: 75%;
+    margin-top: 80px;
+}
+
+.hero-box img {
+    margin: 50px 20px;
+    width: 256px;
+    filter: contrast(0.55);
+    float: left;
+    
+}
+
+/*
+    Sections
+*/
+
+section {
+    float: left;
+    width: 100%;
+}
+
+/*
+    Links
+*/
+
+a,
+a:visited {
+    color: #555;
+    text-decoration: none;
+}
+
+/*
+    Footer
+*/
+
+footer {
+    float: right;
+    list-style: none;
+    width: 100%;
+    padding: 18px 0;
+    background: rgb(61, 61, 61);
+}
+
+
+
+
