@@ -9,8 +9,8 @@
 }
 
 html {
-    background-color: #555;
-    color: #808080;
+    background-color: #1a1a1a;
+    color: #424242;
     font-family: 'Roboto', 'Arial', sans-serif;
     font-weight: 300;
     font-size: 22px;
@@ -21,13 +21,21 @@ html {
     Header
 */
 
+header {
+    height: 90vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(images/hero-image.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
 .main-nav {
     float: right;
     list-style: none;
     width: 100%;
     padding: 18px 0;
-    background: rgb(61, 61, 61);
-    box-shadow: 0 2px 3px #383838;
+    background: #1a1a1a;
+    box-shadow: 0 2px 3px #131313;
 }
 
 .main-nav li {
@@ -35,18 +43,62 @@ html {
     margin-left: 2%;
 }
 
+.hero-box {
+    margin-left: 10%;
+    color: whitesmoke;
+}
+
 .hero-box h1 {
     display: inline-block;
+}
+
+.hero-box h2 {
+    font-weight: 300;
+    letter-spacing: 1px;
+    word-spacing: 5%;
+}
+
+/*
+    Heading text
+*/
+
+h1 {
+    font-size: 250%;
+    font-weight: 500;
     width: 75%;
     margin-top: 80px;
 }
 
-.hero-box img {
-    margin: 50px 20px;
-    width: 256px;
-    filter: contrast(0.55);
-    float: left;
-    
+h2 {
+    font-size: 200%;
+    letter-spacing: 1px;
+}
+
+/*
+    Heading span
+*/
+
+h1 span {
+     font-weight: bold;
+    color: #b93030;
+}
+
+h2 span {
+    font-weight: bold;
+    color:  #b93030;
+}
+
+/*
+    Container
+*/
+
+.container {
+    padding: 2% 0;
+    background-color: #dbdbdb;
+    border-radius: 60px;
+    width: 100%;
+    display: block;
+     /*box-shadow: 0 2px 2px #fcfcfc;*/
 }
 
 /*
@@ -54,8 +106,10 @@ html {
 */
 
 section {
-    float: left;
-    width: 100%;
+    margin: 40px auto;
+    width: 75%;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #969696
 }
 
 /*
@@ -64,7 +118,7 @@ section {
 
 a,
 a:visited {
-    color: #555;
+    color: #adadad;
     text-decoration: none;
 }
 
@@ -77,9 +131,5 @@ footer {
     list-style: none;
     width: 100%;
     padding: 18px 0;
-    background: rgb(61, 61, 61);
+    background: #1a1a1a;
 }
-
-
-
-
