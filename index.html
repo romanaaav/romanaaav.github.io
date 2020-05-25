@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <header>
+    <header id=home>
         <nav class="main-nav">
             <div class="nav-box">
                 <div class="home-icon">
@@ -20,10 +20,10 @@
                 </div>
                 <div class="nav-options">
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About me</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#" id=homeButton>Home</a></li>
+                        <li><a href="#" id=aboutButton>About me</a></li>
+                        <li><a href="#" id=portfolioButton>Portfolio</a></li>
+                        <li><a href="#" id=contactButton>Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -35,7 +35,7 @@
         </div>
 
     </header>
-    <section class="about-section">
+    <section id=about  class="about-section">
         <div class="title-box">
             <span>who am I</span>
             <h2>About <span>me.</span></h2>
@@ -91,7 +91,7 @@
                     Modern software products require aesthetic and responsive graphical user interfaces in all kinds of
                     products,
                     those are delivered thanks to top-end design tools in the Adobe Suit, HTML5,
-                    CSS3 and Javascript Jquery, Bootstrap, in order to make tools and products appealing to the final
+                    CSS3, Javascript, Jquery and     Bootstrap, in order to make tools and products appealing to the final
                     user.
                 </p>
             </div>
@@ -103,14 +103,13 @@
                     tools JIRA,
                     and Postman can be used to deliver safe, fully functional implementations. I count with experience
                     deploying
-                    server side products through Amazon Web Services, specially EC2 servers, with knowledge of Linux
-                    Servers to
+                    server side products through Amazon Web Services, with knowledge of Linux to
                     configure operational production servers from scratch.
                 </p>
             </div>
         </div>
     </section>
-    <section class="portfolio-section">
+    <section id=portfolio class="portfolio-section">
         <div class="title-box">
             <h2>Portfolio<span>.</span></h2>
         </div>
@@ -141,7 +140,7 @@
             <h2>Contact<span>.</span></h2>
         </div>
         <p>
-            Message me through any listed social network or platform, I'll be more than happy to discuss proposals,
+            Message me through any listed social network or platform below, I'll be more than happy to discuss proposals,
             ideas and toughts.
         </p>
     </section>
@@ -149,9 +148,8 @@
         <footer>
             <div class="footer-box">
                 <ul class="footer-nav">
-                    <li>Images courtesy of <a href="https://www.instagram.com/matt_henry_photo/">Matt Henry</a></li>
-                    <li>Icons from <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a>, <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a>, and <a href="https://www.flaticon.com/authors/vitaly-gorbachev" title="Vitaly Gorbachev">Vitaly Gorbachev</a></li>
-                    <li><a href="#">Press</a></li>
+                    <li>Images courtesy of <a href="https://www.instagram.com/matt_henry_photo/" target="_blank">Matt Henry</a></li>
+                    <li>Icons from <a href="https://www.flaticon.com/authors/freepik" title="Freepik" target="_blank">Freepik</a>, <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons" target="_blank">Smashicons</a>, and <a href="https://www.flaticon.com/authors/vitaly-gorbachev" title="Vitaly Gorbachev" target="_blank">Vitaly Gorbachev</a></li>
                 </ul>
                 <div class="social-links">
                     <ul>
@@ -168,6 +166,10 @@
             </div>
         </footer>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="third-party/js/jquery.waypoints.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/buttons.js"></script>
 </body>
 
 </html>
