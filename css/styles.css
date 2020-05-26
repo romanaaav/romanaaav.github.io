@@ -90,6 +90,10 @@ header {
     transition: all 0.5s ease;
 }
 
+.mobile-nav-icon {
+    display: none;
+}
+
 /*
     Heading text
 */
@@ -164,12 +168,7 @@ h2 span {
 */
 
 .container { /*NOT IN USe*/
-    padding: 2% 0;
-    background-color: #dbdbdb;
-    border-radius: 60px;
-    width: 100%;
-    display: block;
-     /*box-shadow: 0 2px 2px #fcfcfc;*/
+    
 }
 
 /*
@@ -220,15 +219,16 @@ section {
 .skills-box {
     margin-top: 30px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
     grid-template-rows: auto;
+    place-items: space-evenly;
+    gap: 2rem;
 }
 
 .skill {
     font-size: 90%;
     text-align: justify;
-    padding: 40px;
-    justify-self: center;
+    width: minmax(33%, 100%);
 }
 
 .skill img {

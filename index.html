@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/queries.css">
     <link rel="stylesheet" href="third-party/css/ionicons.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
     <title>Rom&aacute;n Alicando, Web Developer</title>
@@ -25,6 +26,7 @@
                         <li><a href="#" id=portfolioButton>Portfolio</a></li>
                         <li><a href="#" id=contactButton>Contact</a></li>
                     </ul>
+                    <a class="mobile-nav-icon  --js-nav-icon"><i class="ion-navicon-round"></i></a>
                 </div>
             </div>
         </nav>
@@ -35,117 +37,119 @@
         </div>
 
     </header>
-    <section id=about  class="about-section">
-        <div class="title-box">
-            <span>who am I</span>
-            <h2>About <span>me.</span></h2>
-        </div>
-        <p>
-            Currently I'm a software engineering student with two years happily developing software. With the right
-            tools and the right approach, there's nothing impossible to create.
-        </p>
-        <!--
-                <p>
-                    Is impressive how different tecnologies became necessary in every human task. Time goes on and we
-                    acomplish things that
-                    were unthinkable a year ago, each year we increase our quality of living using tecnologies that break
-                    the boundaries of our
-                    imagination. As software developer, I want to be part of that.
-                </p>
-            -->
-        <p>
-            I started learning Java three years ago as my first programming language and it's tools such as
-            Spring, Spring Security, Spring MVC, Hibernate, Maven, Postman and JIRA to develop server-side solutions.
-        </p>
-
-        <img src="resources/images/desktop-view.jpg" alt="Desktop view">
-    </section>
-    <section class="skills-section">
-        <div class="title-box">
-            <span>I´ve got the</span>
-            <h2>Skills<span>.</span></h2>
-        </div>
-        <p>
-            Plenty of knowledge working with web and mobile tecnologies, client and server side applications in
-            different architectures, providing the optimal solution to
-            any kind of need.
-        </p>
-        <div class="skills-box">
-            <div class="skill">
-                <img src="resources/images/seo-and-web.png" alt="Back end image">
-                <span>Server side applicatives</span>
-                <p class="long-copy">
-                    Using Java as first programming language, experience with all kinds of implementations is granted,
-                    going from
-                    simple desktop applications, Back-End services and microservices connected to large-scale
-                    distributed systems.
-                    Together with
-                    the most powerful development tools such as Maven, JUnit, Hibernate, Spring in it's different
-                    packages like Spring Security, Spring Boot, Spring MVC and Data/JPA.
-                </p>
+    <div class="container">
+        <section id=about  class="about-section">
+            <div class="title-box">
+                <span>who am I</span>
+                <h2>About <span>me.</span></h2>
             </div>
-            <div class="skill">
-                <img src="resources/images/computer-graphic.png" alt="Front end image">
-                <span>Software look and feels</span>
-                <p class="long-copy">
-                    Modern software products require aesthetic and responsive graphical user interfaces in all kinds of
-                    products,
-                    those are delivered thanks to top-end design tools in the Adobe Suit, HTML5,
-                    CSS3, Javascript, Jquery and     Bootstrap, in order to make tools and products appealing to the final
-                    user.
-                </p>
+            <p>
+                Currently I'm a software engineering student with two years happily developing software. With the right
+                tools and the right approach, there's nothing impossible to create.
+            </p>
+            <!--
+                    <p>
+                        Is impressive how different tecnologies became necessary in every human task. Time goes on and we
+                        acomplish things that
+                        were unthinkable a year ago, each year we increase our quality of living using tecnologies that break
+                        the boundaries of our
+                        imagination. As software developer, I want to be part of that.
+                    </p>
+                -->
+            <p>
+                I started learning Java three years ago as my first programming language and it's tools such as
+                Spring, Spring Security, Spring MVC, Hibernate, Maven, Postman and JIRA to develop server-side solutions.
+            </p>
+    
+            <img src="resources/images/desktop-view.jpg" alt="Desktop view">
+        </section>
+        <section class="skills-section">
+            <div class="title-box">
+                <span>I´ve got the</span>
+                <h2>Skills<span>.</span></h2>
             </div>
-            <div class="skill">
-                <img src="resources/images/database.png" alt="Database Image">
-                <span>Anything necessary for the project</span>
-                <p class="long-copy">
-                    The use of code-foreign tools is required in orden to complement the production of software, testing
-                    tools JIRA,
-                    and Postman can be used to deliver safe, fully functional implementations. I count with experience
-                    deploying
-                    server side products through Amazon Web Services, with knowledge of Linux to
-                    configure operational production servers from scratch.
-                </p>
-            </div>
-        </div>
-    </section>
-    <section id=portfolio class="portfolio-section">
-        <div class="title-box">
-            <h2>Portfolio<span>.</span></h2>
-        </div>
-        <p>
-            As a freelancer, I've got plenty of experience developing websites and services for different audiences.
-            Going from food delivery websites, apps and services, to large scale distributed systems with complex
-            microservices schemes. In my portfolio or GitHub you can check some examples.
-        </p>
-        <div class="portfolio-box">
-            <a href="#" target="_blank">
-                <div class="portfolio-option-1">
-                    <h3>Previous work</h3>
-                    <p> Portfolio with previous projects.</p>
+            <p>
+                Plenty of knowledge working with web and mobile tecnologies, client and server side applications in
+                different architectures, providing the optimal solution to
+                any kind of need.
+            </p>
+            <div class="skills-box">
+                <div class="skill">
+                    <img src="resources/images/seo-and-web.png" alt="Back end image">
+                    <span>Server side applicatives</span>
+                    <p class="long-copy">
+                        Using Java as first programming language, experience with all kinds of implementations is granted,
+                        going from
+                        simple desktop applications, Back-End services and microservices connected to large-scale
+                        distributed systems.
+                        Together with
+                        the most powerful development tools such as Maven, JUnit, Hibernate, Spring in it's different
+                        packages like Spring Security, Spring Boot, Spring MVC and Data/JPA.
+                    </p>
                 </div>
-            </a>
-            <a href="https://github.com/romanaaav" target="_blank">
-                <div class="portfolio-option-2">
-                    <h3>Check out GitHub</h3>
-                    <p> Peek the backstage where the magic is done.</p>
+                <div class="skill">
+                    <img src="resources/images/computer-graphic.png" alt="Front end image">
+                    <span>Software look and feels</span>
+                    <p class="long-copy">
+                        Modern software products require aesthetic and responsive graphical user interfaces in all kinds of
+                        products,
+                        those are delivered thanks to top-end design tools in the Adobe Suit, HTML5,
+                        CSS3, Javascript, Jquery and     Bootstrap, in order to make tools and products appealing to the final
+                        user.
+                    </p>
                 </div>
-            </a>
-
-        </div>
-
-    </section>
-    <section id="contact" class="contact-section">
-        <div class="title-box">
-            <h2>Contact<span>.</span></h2>
-        </div>
-        <p>
-            Message me through any listed social network or platform below, I'll be more than happy to discuss proposals,
-            ideas and toughts.
-        </p>
-    </section>
+                <div class="skill">
+                    <img src="resources/images/database.png" alt="Database Image">
+                    <span>Anything necessary for the project</span>
+                    <p class="long-copy">
+                        The use of code-foreign tools is required in orden to complement the production of software, testing
+                        tools JIRA,
+                        and Postman can be used to deliver safe, fully functional implementations. I count with experience
+                        deploying
+                        server side products through Amazon Web Services, with knowledge of Linux to
+                        configure operational production servers from scratch.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id=portfolio class="portfolio-section">
+            <div class="title-box">
+                <h2>Portfolio<span>.</span></h2>
+            </div>
+            <p>
+                As a freelancer, I've got plenty of experience developing websites and services for different audiences.
+                Going from food delivery websites, apps and services, to large scale distributed systems with complex
+                microservices schemes. In my portfolio or GitHub you can check some examples.
+            </p>
+            <div class="portfolio-box">
+                <a href="#" target="_blank">
+                    <div class="portfolio-option-1">
+                        <h3>Previous work</h3>
+                        <p> Portfolio with previous projects.</p>
+                    </div>
+                </a>
+                <a href="https://github.com/romanaaav" target="_blank">
+                    <div class="portfolio-option-2">
+                        <h3>Check out GitHub</h3>
+                        <p> Peek the backstage where the magic is done.</p>
+                    </div>
+                </a>
+    
+            </div>
+    
+        </section>
+        <section id="contact" class="contact-section">
+            <div class="title-box">
+                <h2>Contact<span>.</span></h2>
+            </div>
+            <p>
+                Message me through any listed social network or platform below, I'll be more than happy to discuss proposals,
+                ideas and toughts.
+            </p>
+        </section>
+    </div>
+    
     <footer>
-        <footer>
             <div class="footer-box">
                 <ul class="footer-nav">
                     <li>Images courtesy of <a href="https://www.instagram.com/matt_henry_photo/" target="_blank">Matt Henry</a></li>
@@ -164,7 +168,6 @@
                     Copyright &copy; 2020 by Roman Alicando. All rights reserved.
                 </p>
             </div>
-        </footer>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="third-party/js/jquery.waypoints.min.js"></script>
