@@ -22,8 +22,8 @@
         grid-template-columns: 35% 1fr;
     }
     
-    .nav-options ul {
-        margin-right: 20px;
+    .nav-options li {
+        margin-right: 7px;
     }
 
     .skills-box {
@@ -35,7 +35,7 @@
     }
 
     .skill img {
-        width: 30%;
+        width: 50%;
         margin-bottom: 12px;
     }
 
@@ -63,25 +63,59 @@
     }
     
     .nav-box {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 40% 40% 20%;
+        grid-template-areas: "name list button";
+    }
+
+    .home-icon {
+        word-spacing: 1px;
     }
     
     .nav-options ul {
         display: none;
+        grid-area: list;
+    }
+
+    .nav-options li {
+        margin-bottom: 10px;
+        display: block;
+    }
+
+    .mobile-nav-icon,
+    .ion-close-round {
+        grid-area: button;    
     }
 
     .mobile-nav-icon {
         display: block;
-        float: right;
-        margin-right: 7%;
+        justify-self: right;
+        padding-right: 30%;
     }
 
     .mobile-nav-icon i {
         font-size: 150%;
     }
 
+    .btn-full:active, .btn-full:link,  .btn-full:visited,
+    .btn-ghost:active, .btn-ghost:link, .btn-ghost:visited {
+        padding: 5px 15px;
+    }
+
+    .skill {
+    padding:  10px 7%;
+    }
+
+    .skill img {
+    width: 60%;
+    margin-bottom: 12px;
+    }
+
     .portfolio-box {
         grid-template-columns: 1fr;
+    }
+
+    .portfolio-box a{
+        line-height: 1.15;
     }
 
     .portfolio-option-1,
